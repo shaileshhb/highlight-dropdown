@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# HighlightDropdown
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **HighlightDropdown** is a React component that extends Material-UI (MUI) Autocomplete, offering additional features for creating parent-child dropdowns with built-in text highlighting. This makes selecting items from hierarchical data more user-friendly and visually appealing.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Parent-Child Dropdowns**: Easily set up cascading dropdowns with hierarchical data.
+- **Search Highlighting**: Automatically highlights matching text as the user types, improving the user experience.
+- **Customization**: Customize the component's appearance and behavior using various optional props.
 
-### `npm start`
+## Demo
+Check out the live demo of the HighlightDropdown [here](https://highlight-dropdown-01.vercel.app/). Experience its powerful features in action!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+To install the **HighlightDropdown** package, you can use npm or yarn:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install highlight-dropdown
+# or
+yarn add highlight-dropdown
+```
 
-### `npm test`
+# API Reference
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Props
+- **dropdownData** (required): An array of objects with the following fields:
+    - *id*: A unique identifier for the item.
+    - *name*: The name of the item.
+    - *groupName*: The group or category name to establish the hierarchy.
 
-### `npm run build`
+- **selectedValues** (required): An array of selected values. Initially empty or with pre-selected values.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **setSelectedValues** (required): A function to set the selected values.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **browsePopupTitle** (required): Title to be shown when popup is opened.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **isReadOnly** (optional, default: false): Set to true to make the component read-only.
 
-### `npm run eject`
+- **open** (optional, default: false): Set to true to initially open the dropdown.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **size** (optional, default: 'medium'): Size of the component (options: 'small', 'medium').
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **placeholder** (optional, default: 'Select items...'): The placeholder text displayed when no item is selected.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **className** (optional): Additional CSS classes for customization.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **highlightColor** (optional, default: text-[#DE6A00]): Set colour for the hightlighted text.
 
-## Learn More
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/shaileshhb/highlight-dropdown/blob/main/LICENSE) file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Support
+If you have any questions or need assistance, please open an issue on GitHub or reach out to us at [shaileshb.0720@gmail.com](mailto:shaileshb.0720@gmail.com).
